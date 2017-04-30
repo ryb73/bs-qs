@@ -1,0 +1,26 @@
+{
+  "name": "bs-qs",
+  "version": "1.0.0",
+  "description": "Bucklescript bindings for qs, a query string parsing library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eval $(dependencyEnv) && nopam && bsb 2>&1 | berror.native --path-to-refmttype $(which refmttype)",
+    "watch": "eval $(dependencyEnv) && nopam && bsb -make-world -w 2>&1 | berror.native --path-to-refmttype $(which refmttype)",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "author": "Ryan Biwer",
+  "_": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryb73/bs-qs.git"
+  },
+  "devDependencies": {
+    "bs-platform": "1.7.3",
+    "dependency-env": "0.1.1",
+    "nopam": "0.1.0",
+    "ocamlBetterErrors": "0.1.1"
+  }
+}

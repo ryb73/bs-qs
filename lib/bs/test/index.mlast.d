@@ -1,0 +1,1 @@
+test/index.cmj : src/qs.cmj

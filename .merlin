@@ -1,0 +1,10 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx /Users/ryan/Personal/proj/bs-qs/node_modules/bs-platform/bin/bsppx.exe
+S /Users/ryan/Personal/proj/bs-qs/node_modules/bs-platform/lib/ocaml
+B /Users/ryan/Personal/proj/bs-qs/node_modules/bs-platform/lib/ocaml
+FLG -nostdlib -w -10 -no-alias-deps -color always -w -40+6+7+27+32..39+44+45
+S test
+B lib/bs/test
+S src
+B lib/bs/src
+####BSB GENERATED: NO EDIT}
