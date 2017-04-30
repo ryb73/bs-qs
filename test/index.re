@@ -1,12 +1,8 @@
-open Qs;
-
-module QuerySchema = {
+module QsParser = Qs.MakeParser({
     class type t = {
         pub something : Js.undefined string
     };
-};
-
-module QsParser = MakeParser(QuerySchema);
+});
 
 let parsed = QsParser.parse "something=ok";
 Js.log (switch (Js.Undefined.to_opt parsed##something) {
@@ -17,9 +13,7 @@ Js.log (switch (Js.Undefined.to_opt parsed##something) {
 let myQuery = [%bs.obj {
     var1: "one",
     var2: "http://www.ok.com/",
-    arr: [
-        1, 2
-    ]
+    arr: [ 1, 2 ]
 }];
 
 Js.log (Qs.stringify myQuery);
