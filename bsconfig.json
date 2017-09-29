@@ -7,5 +7,5 @@
             "type": "dev"
         }
     ],
-    "bsc-flags": [ "-w -10" ]
+    "bsc-flags": [ "-w -10", "-bs-super-errors" ]
 }
