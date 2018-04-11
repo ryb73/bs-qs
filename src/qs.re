@@ -1,9 +1,7 @@
-module type ParserSchema = {
-    type t;
+module type ParserSchema = {type t;};
+
+module MakeParser = (Schema: ParserSchema) => {
+  [@bs.module "qs"] external parse : string => Js.t(Schema.t) = "parse";
 };
 
-module MakeParser = fun (Schema : ParserSchema) => {
-    external parse : string => Js.t Schema.t = "parse" [@@bs.module "qs"];
-};
-
-external stringify : Js.t {..} => string = "stringify" [@@bs.module "qs"];
+[@bs.module "qs"] external stringify : Js.t({..}) => string = "stringify";

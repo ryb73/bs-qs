@@ -1,11 +1,12 @@
 {
-    "name" : "bs-qs",
-    "sources" : [
-        { "dir" : "src" },
-        {
-            "dir": "test",
-            "type": "dev"
-        }
-    ],
-    "bsc-flags": [ "-w -10" ]
+  "refmt": 3,
+  "name": "bs-qs",
+  "sources": [
+    { "dir": "src" },
+    {
+      "dir": "test",
+      "type": "dev"
+    }
+  ],
+  "bsc-flags": ["-w -10"]
 }
