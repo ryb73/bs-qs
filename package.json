@@ -1,6 +1,6 @@
 {
   "name": "bs-qs",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Bucklescript bindings for qs, a query string parsing library",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "url": "git@github.com:ryb73/bs-qs.git"
   },
   "devDependencies": {
-    "bs-platform": "1.7.3",
+    "bs-platform": "2.2.2",
     "dependency-env": "0.1.1",
     "nopam": "0.1.0",
     "ocamlBetterErrors": "0.1.1"
