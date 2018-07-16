@@ -1,19 +1,25 @@
-module QsParser = Qs.MakeParser({
-    class type t = {
-        pub something : Js.undefined string
-    };
-});
+[@decco]
+type t = {
+    something: option(string)
+};
 
-let parsed = QsParser.parse "something=ok";
-Js.log (switch (Js.Undefined.to_opt parsed##something) {
-    | None => "not found"
-    | Some s => s
-});
+let parsed = Qs.parse("something=ok");
+switch (t__from_json(parsed)) {
+    | Ok({ something: Some(s) }) => Js.log(s)
+    | _ => Js.log("oh jeez")
+};
 
-let myQuery = [%bs.obj {
-    var1: "one",
-    var2: "http://www.ok.com/",
-    arr: [ 1, 2 ]
-}];
+[@decco]
+type q = {
+    var1: string,
+    var2: string,
+    arr: list(int)
+};
 
-Js.log (Qs.stringify myQuery);
+let myQuery = Js.Dict.fromList([
+    ("var1", Js.Json.string("one")),
+    ("var2", Js.Json.string("http://www.ok.com/")),
+    ("arr", [| 1, 2 |] |> Js.Array.map(float_of_int) |> Js.Array.map(Js.Json.number) |> Js.Json.array),
+]);
+
+Js.log(Qs.stringify(myQuery));

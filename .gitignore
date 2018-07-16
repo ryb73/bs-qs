@@ -64,3 +64,8 @@ lib/
 .vscode/
 
 .merlin
+
+.bsb.lock
+
+# ppl
+package-links.json
