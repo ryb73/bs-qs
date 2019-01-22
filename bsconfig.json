@@ -1,8 +1,8 @@
 {
-    "name" : "bs-qs",
-    "bs-dev-dependencies": [ "decco" ],
-    "sources" : [
-        { "dir" : "src" },
+    "name": "@ryb73/bs-qs",
+    "bs-dev-dependencies": [ "@ryb73/decco" ],
+    "sources": [
+        { "dir": "src" },
         {
             "dir": "test",
             "type": "dev"
