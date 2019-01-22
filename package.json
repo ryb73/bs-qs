@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean && bsb -make-world",
     "watch": "npm run clean && bsb -make-world -w",
-    "clean": "rm -rf lib/ && bsb -clean-world"
+    "clean": "rm -rf lib/ && bsb -clean-world",
+    "postinstall": "[ ! -f package-links.json ] || ppl link-file"
   },
   "keywords": [],
   "license": "MIT",
@@ -18,9 +19,10 @@
     "url": "git@github.com:ryb73/bs-qs.git"
   },
   "peerDependencies": {
-    "bs-platform": "^3.0.0"
+    "bs-platform": "^4.0.0",
+    "decco": "0.0.1"
   },
   "dependencies": {
-    "qs": "6.5.2"
+    "qs": "6.6.0"
   }
 }

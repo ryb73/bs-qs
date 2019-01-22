@@ -4,7 +4,7 @@ type t = {
 };
 
 let parsed = Qs.parse("something=ok");
-switch (t__from_json(parsed)) {
+switch (t_decode(parsed)) {
     | Ok({ something: Some(s) }) => Js.log(s)
     | _ => Js.log("oh jeez")
 };
