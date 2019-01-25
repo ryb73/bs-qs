@@ -1,7 +1,7 @@
 {
   "name": "@ryb73/bs-qs",
   "version": "3.0.1",
-  "description": "Bucklescript bindings for qs, a query string parsing library",
+  "description": "Minimal Bucklescript bindings for qs, a query string parsing library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,8 @@
   },
   "files": [
     "/bsconfig.json",
-    "/src"
+    "/src",
+    "/lib/js/src"
   ],
   "keywords": [],
   "license": "MIT",
