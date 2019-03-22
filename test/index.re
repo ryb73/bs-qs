@@ -1,19 +1,12 @@
-[@decco]
+[@decco.decode]
 type t = {
     something: option(string)
 };
 
 let parsed = Qs.parse("something=ok");
 switch (t_decode(parsed)) {
-    | Ok({ something: Some(s) }) => Js.log(s)
+    | Ok({ something: Some(s) }) => Js.log(s) /* "ok" */
     | _ => Js.log("oh jeez")
-};
-
-[@decco]
-type q = {
-    var1: string,
-    var2: string,
-    arr: list(int)
 };
 
 let myQuery = Js.Dict.fromList([
