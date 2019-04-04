@@ -1,6 +1,6 @@
 {
   "name": "@ryb73/bs-qs",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Minimal Bucklescript bindings for qs, a query string parsing library",
   "main": "index.js",
   "scripts": {
