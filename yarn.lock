@@ -2,10 +2,17 @@
 # yarn lockfile v1
 
 
-"@ryb73/decco@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@ryb73/decco/-/decco-0.0.7.tgz#4566e0bbdb9d9b3403609dc5e437dc8e82327bea"
-  integrity sha512-452D4KvLAtUQGoV3/LROIrGxMskL9OQtzUzHkBrpzI6qo1kckaPc7z8BZlibxv2Dzw2XK3N9HReiyTHxgz9JDA==
+"@ryb73/decco@0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@ryb73/decco/-/decco-0.0.9.tgz#6629ae2f703b27852bd7cb7552f7d0d499c7c129"
+  integrity sha512-wNG1cTYRR3hBxSKD0pvGtoKfBgOHjOXCBKypS2n/kBABSSHrDM9sZ2t14z8tpWGHX4y+U3HpN+nUTZjBF/JrSw==
+  dependencies:
+    bs-platform "^5.0.3"
+
+bs-platform@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-5.0.3.tgz#2b167603ef52574cb9534fabab702f6013715e6c"
+  integrity sha512-GAeypBebeDGTay5kJ3v5Z3Whp1Q4zQ0hAttflVtPG3zps88xDZnVAlS3JGIIBDmJFEMyNtv5947a/IWKvWXcPw==
 
 qs@6.7.0:
   version "6.7.0"
