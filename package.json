@@ -27,7 +27,10 @@
     "bs-platform": "^5.0.0"
   },
   "dependencies": {
-    "@ryb73/decco": "0.0.14",
+    "@ryb73/decco": "0.1.0",
     "qs": "6.7.0"
+  },
+  "devDependencies": {
+    "bs-platform": "5.0.6"
   }
 }
