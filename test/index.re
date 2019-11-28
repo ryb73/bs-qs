@@ -6,7 +6,8 @@ type t = {
 let parsed = Qs.parse("something=ok");
 switch (t_decode(parsed)) {
     | Ok({ something: Some(s) }) => Js.log(s) /* "ok" */
-    | _ => Js.log("oh jeez")
+    | Ok({ something: None })
+    | Error(_) => Js.log("oh jeez")
 };
 
 let myQuery = Js.Dict.fromList([

@@ -1,6 +1,6 @@
 {
     "name": "@ryb73/bs-qs",
-    "bs-dev-dependencies": [ "@ryb73/decco" ],
+    "bs-dev-dependencies": [ "decco" ],
     "sources": [
         { "dir": "src" },
         {
@@ -8,7 +8,10 @@
             "type": "dev"
         }
     ],
-    "ppx-flags": [ "@ryb73/decco/ppx/ppx_decco.sh" ],
+    "ppx-flags": [ "decco/ppx" ],
     "refmt": 3,
-    "bsc-flags": [ "-w -105", "-bs-super-errors" ]
+    "warnings": {
+        "number": "+A-4-40-42-105"
+    },
+    "bsc-flags": [ "-bs-super-errors" ]
 }
