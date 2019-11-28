@@ -1,6 +1,6 @@
 {
   "name": "@ryb73/bs-qs",
-  "version": "3.0.9",
+  "version": "4.0.0-bs6.0",
   "description": "Minimal Bucklescript bindings for qs, a query string parsing library",
   "main": "index.js",
   "scripts": {
@@ -24,13 +24,13 @@
     "url": "git@github.com:ryb73/bs-qs.git"
   },
   "peerDependencies": {
-    "bs-platform": "^5.0.0"
+    "bs-platform": "^6.0.1"
   },
   "dependencies": {
-    "@ryb73/decco": "0.1.0",
-    "qs": "6.7.0"
+    "decco": "^1.0.0",
+    "qs": "^6.7.0"
   },
   "devDependencies": {
-    "bs-platform": "5.0.6"
+    "bs-platform": "6.0.1"
   }
 }
