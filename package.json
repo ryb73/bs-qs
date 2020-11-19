@@ -12,8 +12,7 @@
   },
   "files": [
     "/bsconfig.json",
-    "/src",
-    "/lib/js/src"
+    "/src"
   ],
   "keywords": [],
   "license": "MIT",
@@ -24,13 +23,13 @@
     "url": "git@github.com:ryb73/bs-qs.git"
   },
   "peerDependencies": {
-    "bs-platform": "^6.0.1"
+    "bs-platform": "6 || 7 || 8"
   },
   "dependencies": {
     "decco": "^1.0.0",
     "qs": "^6.7.0"
   },
   "devDependencies": {
-    "bs-platform": "6.0.1"
+    "bs-platform": "8"
   }
 }
